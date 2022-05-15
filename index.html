@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="keywords" content="HTML, CSS, JavaScript">
+            <meta name="description" content="Front End Developer services">
+            <!-- <meta http-equiv="refresh" content="30"> -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Surprise </title>
+        <style>
+            /* * { margin:auto; } */
+
+            button, img { border-radius: 100px; border: dashed 9px rgb(194, 72, 6);
+                    background-color: white;
+                    animation-name: box; 
+                    animation-duration: 3s; 
+                    animation-direction:normal;
+                    animation-iteration-count: infinite; 
+                    position: relative;
+                    }
+
+            @keyframes box { from { background-color: rgb(205, 9, 9);}
+                            to { background-color: black;}
+                            /* 50% { transform: rotatez(360deg);
+                                   left:50%;} */
+                                }
+                    
+            h1 { font-family: 'Lucida handwriting', sans-serif; 
+                text-align: center; 
+                background-color: rgb(198, 86, 86); 
+                padding: 30px;   
+                }
+            
+            .hint { text-align: center; 
+                    font-size:x-large; 
+                    font-family: Papyrus, sans-serif;
+                    color: rgb(3, 0, 13); }
+
+            .audio-box { background-color: rgb(240, 221, 225); width: 100%; padding: 1px;}
+            
+            .audio, .gift { width: 400px; margin: auto; padding: 30px;}
+
+            audio { border: solid 3px rgb(236, 0, 0); border-radius: 150px;}
+            
+            form { border: solid rgb(99, 160, 8) 4px; border-radius: 30px; padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body onload="console.log('Welcome to my home page!');">
+        <h1> <em> HAPPY BIRTHDAY ! </em> 🎉🎈</h1>
+        
+        <div class="gift">
+            <p class="hint"> <b> 👇👇🏻👇🏼 See Inside </b> </p>
+            <button onclick= "document.getElementById('box').src= 'Image/party.gif'"> <img id="box" src="Image/bdayBox2.webp" alt="Birthday_box"> </button>
+        </div>
+
+        <br> 
+
+        <div class="audio-box">
+            <div class="audio">
+                <h3>🎵 Enjoy classical music by your cousin </h3>
+                <audio controls volume="0.2">
+                    <source src="Music_snippet.mp3"> 
+                    Audio element unsupported in browser  
+                </audio>
+            </div>
+        </div> <br> <br>
+
+        <form action="" enctype="application/x-www-form-urlencoded" method="post" target="_blank">
+            <strong> What would you restyle differently? </strong> <br>
+            <input type="checkbox" id="colour"> 
+            <label for="colour"> Colour </label> <br>
+            <input type="checkbox" id="icons"> 
+            <label for="icons"> Icons </label> <br>
+            <input type="checkbox" id="buttons"> 
+            <label for="buttons"> Buttons </label> <br>
+            <input type="checkbox" id="fonts"> 
+            <label for="fonts"> Fonts </label> <br> <br>
+            <textarea id="" cols="30" rows="7" placeholder="Your feedback"></textarea> <br> <br>
+            <input type="submit" value="SUBMIT"> 
+        </form>
+    </body>
+</html>
